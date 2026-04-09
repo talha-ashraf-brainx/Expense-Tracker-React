@@ -1,0 +1,11 @@
+.listing-section {
+    display: flex;
+    justify-content: start;
+    align-items: flex-start;
+
+    @media (max-width: 1024px) {
+        flex-direction: column;
+        margin-left: 16px;
+        justify-content: center;
+    }
+}

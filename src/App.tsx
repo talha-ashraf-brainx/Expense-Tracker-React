@@ -3,6 +3,7 @@ import AppBar from './components/AppBar'
 import AvailableBalance from './components/AvailableBalance'
 import IncomeExpensesRow from './components/IncomeExpensesRow'
 import RecentTransactionsListing from './components/RecentTransactionsListing'
+import OverviewContainer from './components/OverviewContainer'
 
 function App() {
 
@@ -11,8 +12,9 @@ function App() {
       <AppBar />
       <AvailableBalance />
       <IncomeExpensesRow />
-      <section>
+      <section className="listing-section">
         <RecentTransactionsListing />
+        <OverviewContainer />
       </section>
     </>
   )
