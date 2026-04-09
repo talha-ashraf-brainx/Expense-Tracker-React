@@ -3,7 +3,7 @@ import './AppBar.css'
 function AppBar() {
   return (
    <div className="app-bar">  
-   <input type="text" placeholder="Search" className="app-bar-input" />  
+   <input type="search" placeholder="Search" className="app-bar-input" enterKeyHint="search" />  
    <div className="app-bar-content-container">
      <button type="button" className="app-bar-bell" aria-label="Notifications">
        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden={true}>
@@ -13,7 +13,7 @@ function AppBar() {
      </button>
      <div className="app-bar-divider" aria-hidden={true} />
    <div className="app-bar-profile-container">
-     <button type="button" className="app-bar-profile" aria-label="Profile">
+     <button type="button" className="app-bar-profile" aria-label="Profile — Alex Sterling, Premium member">
        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden={true}>
          <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2" />
          <circle cx="12" cy="7" r="4" />
