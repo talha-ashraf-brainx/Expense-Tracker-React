@@ -1,0 +1,125 @@
+.income-expense-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: center;
+    gap: 12px;
+    margin: 0 16px 0 16px;
+
+    @media (max-width: 1024px) {
+        justify-content: center;
+    }
+}
+
+.income-expense-container {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    flex: 1 1 320px;
+    min-width: 0;
+    max-width: 60%;
+    border-radius: 0px;
+    border: 1px solid var(--border);
+    border-left: none;
+    color: #08060d;
+    overflow: hidden;
+}
+
+.income-expense-container-indicator {
+    width: 8px;
+    flex-shrink: 0;
+    align-self: stretch;
+    background-color: var(--border);
+}
+
+.income-expense-container--growth .income-expense-container-indicator {
+    background-color: #16a34a;
+}
+
+.income-expense-container--decline .income-expense-container-indicator {
+    background-color: #dc2626;
+}
+
+.income-expense-container-body {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 28px 16px;
+}
+
+.income-expense-container-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    background-color: #eff0f1;
+    border: 1px solid var(--border);
+    color: #08060d;
+}
+
+.income-expense-container-icon--growth {
+    color: #16a34a;
+    background-color: rgba(22, 163, 74, 0.12);
+    border-color: rgba(22, 163, 74, 0.25);
+}
+
+.income-expense-container-icon--decline {
+    color: #dc2626;
+    background-color: rgba(220, 38, 38, 0.12);
+    border-color: rgba(220, 38, 38, 0.25);
+}
+
+.income-expense-container-icon-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.income-expense-container-icon-text-growth {
+    font-size: 12px;
+    font-weight: 600;
+    padding: 4px 12px 4px 12px;
+    color: #16a34a;
+    background-color: rgba(22, 163, 74, 0.12);
+    border-color: rgba(22, 163, 74, 0.25);
+    border-radius: 4px;
+}
+
+.income-expense-container-icon-text-decline {
+    font-size: 12px;
+    font-weight: 600;
+    padding: 4px 12px 4px 12px;
+    color: #dc2626;
+    background-color: rgba(220, 38, 38, 0.12);
+    border-color: rgba(220, 38, 38, 0.25);
+    border-radius: 4px;
+}
+
+.income-expense-container-amount {
+    margin: 32px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 8px;
+
+}
+
+.income-expense-container-amount h5 {
+    margin: 0;
+    font-weight: 500;
+    font-size: 16px;
+    color: #5D5E61;
+
+
+}
+
+.income-expense-container-amount p {
+    font-size: 36px;
+    font-weight: 600;
+    color: #5D5E61;
+
+}
