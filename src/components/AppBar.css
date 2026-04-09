@@ -1,0 +1,102 @@
+.app-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    background-color: var(--bg);
+    border-bottom: 1px solid #e5e4e7;
+}
+
+.app-bar input {
+    width: 40%;
+    padding: 8px 10px;
+    border-radius: 4px;
+    border: 1px solid var(--border);
+    background-color: #eff0f1;
+    color: #08060d;
+    box-sizing: border-box;
+    appearance: none;
+    -webkit-appearance: none;
+}
+
+.app-bar input:focus {
+    outline: none;
+}
+
+.app-bar input:focus-visible {
+    border-color: var(--accent);
+    box-shadow: 0 0 0 2px var(--accent-bg);
+}
+
+.app-bar-divider {
+    width: 2px;
+    height: 30px;
+    flex-shrink: 0;
+    background-color: var(--border);
+}
+
+.app-bar-bell,
+.app-bar-profile {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 6px;
+    border: none;
+    border-radius: 8px;
+    background: transparent;
+    color: var(--text-h);
+    cursor: pointer;
+}
+
+.app-bar-bell:focus,
+.app-bar-profile:focus {
+    outline: none;
+}
+
+.app-bar-bell:focus-visible,
+.app-bar-profile:focus-visible {
+    box-shadow: 0 0 0 2px var(--accent-bg);
+}
+
+.app-bar-bell:hover,
+.app-bar-profile:hover {
+    background: rgba(0, 0, 0, 0.04);
+}
+
+.app-bar-content-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.app-bar-profile-container {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.app-bar-profile-text-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    align-items: flex-start;
+    text-align: left;
+}
+
+.app-bar-profile-text-container h2 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--text-h);
+    line-height: 1.2;
+    letter-spacing: normal;
+}
+
+.app-bar-profile-text-container p {
+    margin: 0;
+    font-size: 12px;
+    color: var(--text);
+    line-height: 1.2;
+}
